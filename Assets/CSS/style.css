@@ -64,3 +64,64 @@ header h1 {
   footer a{
     color: #024e76;
   }
+
+  section {
+    padding: 60px;
+  }
+
+  .hero{
+    background-image: url('../Assets/hero-bg.jpeg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* See comment under the .hero-form absolute position. */
+  }
+
+  .hero-form{
+      color: #024e76;
+      background-color: #fce138;
+      padding: 20px;
+      width: 500px;
+      /* The padding and width define the size of the box with the background color specified.
+      Leaving them out will result in no change to the class. */
+      border-style: solid;
+      border-width: 3px;
+      border-color: #024e76;
+      position: absolute;
+      /* In order for an absolute element to properly reference a relative position, the relative position of the parent must
+    be defined. If it is not defined and the child element is left with an absolute on its own, then the child element will
+    reference the body of the HTML by default. */
+      bottom: 120px;
+      right: 140px;
+    }
+
+    .hero-form h3{
+        font-size: 24px;
+        margin: 0px;
+    }
+
+    /* The following adds space between the lines of the paragraph inside the form. */
+    .hero-form p{
+        margin: 5px 0px 15px 0px;
+    }
+
+    .form-input{
+        border: 1px solid #024e76;
+        display: block;
+        /* By setting the display property to block, the browswer will seperate the three input form and will render them
+        on top of each other inside the hero form. If this was set to inline, they would have been listed back to back. */
+        padding: 7px 15px;
+        font-size: 16px;
+        color: #024e76;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .hero-form button{
+        color: #fce138;
+        background-color: #024e76;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
