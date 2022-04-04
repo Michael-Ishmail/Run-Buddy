@@ -82,16 +82,6 @@ header h1 {
     text-align: center;
   }
 
-  .intro h2{
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-    display: inline-block;
-  }
-
   .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -101,6 +91,32 @@ header h1 {
     /* auto will tell the browser to evenly calculate the margin based on the webpage. In this case, the left and right values
     will be even and the text will be centered. */
   }
+
+  .steps {
+    text-align: center;
+    background: #fce138;
+  }
+
+  .section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
+  
+  .primary-border {
+    border-color: #fce138;
+  }
+  
+  .secondary-border {
+    border-color: #39a6b2;
+  }
+
+  /* The code above has consilidated the code for intro h2 and steps h2. This way, the elements that wil be styled the same
+  way will have one section to edit. This will also allow us to add additional sections and have them pull from the same source 
+  for efficiency. */
 
   .hero-form{
       color: #024e76;
@@ -148,4 +164,28 @@ header h1 {
         border: none;
         padding: 10px 20px;
         font-size: 16px;
+    }
+
+    .steps div {
+      margin-bottom: 80px;
+    }
+    
+    .steps img {
+      width: 15%;
+      margin: 10px 0;
+    }
+    
+    .steps h3 {
+      color: #024e76;
+      font-size: 46px;
+      margin-top: 10px;
+    }
+    
+    .steps p {
+      color: #39a6b2;
+      font-size: 23px;
+    }
+  
+    .steps span {
+      font-size: 38px;
     }
